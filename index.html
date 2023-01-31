@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+    <head>
+
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width">
+        <title>StarEncrypter</title>
+        <link rel="stylesheet" href="reset.css">
+        <link rel="stylesheet" href="style.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+
+    </head>
+
+    <body>
+
+        <header>
+            <div class="titulo-principal">
+                <img class="animate__animated animate__bounceIn" src="Imagenes/Vector.png" alt="logo de alura">
+                <h1 class="animate__animated animate__backInDown">StarEncrypter</h1>
+            </div>
+        </header>
+
+        <main>
+            <section class="bloque1">
+                <textarea class="texto-ingresado" id="textoinicial" placeholder="Ingrese el texto aquí" required></textarea>
+                <div>
+                    <h6 class="informacion">Sólo letras minúsculas y sin acentos</h6>
+                </div>
+                <div class="botones">
+                    <button class="boton-encriptador" id="encriptador">Encriptar</button>
+                    <button class="boton-desencriptador" id="desencriptador">Desencriptar</button>
+                </div>
+            </section>
+            <div class="mensaje-resultante">
+                <textarea class="areadesalida" id="salida" cols="20" rows="10"></textarea>
+                <div class="mensaje-noencontrado">
+                    <img src="Imagenes/Muñeco.png" class="imgmuneco" alt="imagen de muñeco buscador">
+                    <p class="mensaje1">Ningún mensaje fue encontrado</p>
+                    <p class="mensaje2">Ingresa el texto que desees encriptar o desencriptar.</p>
+                </div>
+                <button class="botonCopiar" id="copiar">Copiar</button>
+            </div>
+        </main>
+
+    </body>
+
+    <script src="main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+
+</html>
