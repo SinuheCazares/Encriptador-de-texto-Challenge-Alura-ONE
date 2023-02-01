@@ -32,7 +32,9 @@ function validarTexto(){
                 htmlContainer: 'htmlAlert'
             }
         })
-        /*location.reload();*/
+        setTimeout(function(){
+            location.reload();
+         }, 3000);
         return true;
     }
 }
