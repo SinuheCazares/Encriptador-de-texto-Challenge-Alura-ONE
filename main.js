@@ -17,7 +17,7 @@ textarea.addEventListener("keyup", e=>{
 
 function validarTexto(){
     let textoEscrito = document.querySelector(".texto-ingresado").value;
-    let validador = textoEscrito.match(/^[a-z]*$/);
+    let validador = textoEscrito.match(/^[a-z,0-9,ñ,¿,?,¡,! ]*$/);
 
     if(!validador || validador === 0) {
         Swal.fire({
