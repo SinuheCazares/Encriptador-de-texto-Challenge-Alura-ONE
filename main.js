@@ -19,7 +19,7 @@ function validarTexto(){
     let textoEscrito = document.querySelector(".texto-ingresado").value;
     let validador = textoEscrito.match(/^[a-z]*$/);
 
-    if(!validador || validador === 0) {
+    if(!validador) {
         Swal.fire({
             icon: 'error',
             iconColor:'red',
